@@ -1,4 +1,4 @@
-# Navigation Model for OpenStreetSet (OSS)
+# Navigation Model for Real Urban Navigation (RUN)
 
 ### Dependencies
 
