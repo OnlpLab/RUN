@@ -5,7 +5,19 @@
 * [Pytorch](https://pytorch.org/) - Machine learning library for Python-related dependencies
 * [Anaconda](https://www.anaconda.com/download/) - Anaconda includes all the other Python-related dependencies
 * [ArgParse](https://docs.python.org/3/library/argparse.html) - Command line parsing in Python
- 
+
+### Installation
+Below are installation instructions under Anaconda.
+IMPORTANT: We use python 3.7.3
+
+ - Setup a fresh Anaconda environment and install packages: 
+ ```sh
+ # create and switch to new anaconda env
+$ conda create -n RUN python=3.7.3
+$ source activate RUN
+$ pip install -r requirements.txt
+```
+
 ### Instructions
  - Here are the instructions to use the code base:
  
