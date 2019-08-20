@@ -47,7 +47,7 @@ The OSS corpus contains 4 files each appearing in the format .pickle (using Pyth
   
  However, we have been unsuccessful in benefiting from 'FACE' and 'VERIFY'. We leave them for future research.
 
-### valselct
+### valselect
   - indicates the samples used for validation only in each map
 
 
