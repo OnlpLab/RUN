@@ -12,9 +12,11 @@ IMPORTANT: We use python 3.7.3
 
  - Setup a fresh Anaconda environment and install packages: 
  ```sh
- # create and switch to new anaconda env
+# create and switch to new anaconda env
 $ conda create -n RUN python=3.7.3
 $ source activate RUN
+
+# install required packages
 $ pip install -r requirements.txt
 ```
 
