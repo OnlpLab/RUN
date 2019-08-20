@@ -5,7 +5,7 @@ The OSS corpus contains 4 files each appearing in the format .pickle (using Pyth
   - grids (tiles)
   - maps
   - dataset
-  - valselct
+  - valselect
 
 ### grids (tiles)
 
