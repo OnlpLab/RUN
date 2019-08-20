@@ -458,10 +458,7 @@ def test_model_multi_sentence(args):
     for idx,story_id in enumerate(data_process.dict_data_list['all'][name_map]):
         list_of_indexes=[]
         for idx_data, data in enumerate(data_process.dict_data['all'][name_map]): #
-    #        print ("type(data['id']):",type(data['id']))
-     #       print ("type(list['idlist'])",type(list['idlist']))
-      #      print ("type(list['idlist'][0])",type(list['idlist'][0]))
-
+    
             if data['id']==story_id:
                 list_of_indexes.append(idx_data)
 
@@ -477,7 +474,7 @@ def test_model_multi_sentence(args):
         _, pos_end = data_process.get_pos(last, name_map, 'all' )
 
         input_variable_world=bs.get_feat_current_position(pos_start)
- #       endings=[]
+ 
         ref_path_multi_sentence = []
         gen_top_path_multi_sentence=[]
         for idx_data in list_of_indexes:
@@ -488,17 +485,17 @@ def test_model_multi_sentence(args):
 
 
             bs.search_func()
-            #top_path=bs.finish_list[0]
+
             ref_path = one_sample.route
             gen_top_path = bs.get_route_generated()
 
-#            print ("ref_path:{}".format(ref_path))
+
             ref_path_multi_sentence+=ref_path[:]
             gen_top_path_multi_sentence+=gen_top_path[:]
-    #        print (gen_top_path)
+
             pos_start=gen_top_path[-1]
             input_variable_world=bs.get_feat_current_position(pos_start)
-#            endings.append(pos_start)
+
             bs.refresh_state_multi_sentence()
 
         is_the_route_correct = bs.executer.evaluate_multi_sentence(gen_top_path_multi_sentence, ref_path_multi_sentence)
@@ -506,10 +503,7 @@ def test_model_multi_sentence(args):
         if is_the_route_correct:
             cnt_success += 1
         logger.info( "success rate for now: {}. success:{}. all:{}".format(round(1.0 * cnt_success / cnt_all, 4), cnt_success,cnt_all))
- #       route_ref_str=';'.join(map(str,ref_path_multi_sentence))
-  #      logger.info("route ref:{}",route_ref_str)
-   #     route_gen_str=';'.join(map(str,gen_top_path_multi_sentence))
-    #    logger.info("route gen:{}",route_gen_str)
+ 
         
 
 
