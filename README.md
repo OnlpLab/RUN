@@ -41,4 +41,4 @@ $ python test_model.py [-h] [short_name_arg] %(For explanation on the commands)
 ```
 
 ### License
-This software is released under the terms of the Apache License, Version 2.0.
+This software and data are released under the terms of the Apache License, Version 2.0.
